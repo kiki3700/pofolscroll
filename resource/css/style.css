@@ -1,0 +1,22 @@
+@charset "utf-8";
+.background-image{
+    background-image: url(../image/olympicpark.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.frame{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+.topnav>ul{ 
+    list-style: none;
+    display: flex;
+}
+
+.intro{
+    height: 1vh;
+}
