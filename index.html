@@ -2,36 +2,156 @@
 <html>
     <head>
         <title>ben's portfolio</title>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
         <link rel="stylesheet" href="/resource/css/style.css" type="text/css">
+      
     </head>
     <body>
+        <nav class = "topnav">
+            <ul>
+                <li class="index-btn">about</li>
+                <li class="index-btn">swot</li>
+                <li class="index-btn">skill set</li>
+                <li class="index-btn">portfolio</li>
+            </ul>
+        </nav>
         <div class ="background-image">            
             <div class ="frame">
                 <div class = "intro">
-                    <h1>안녕하세요 이성현 입니다.</h1>
+                    <h1 data-aos="zoom-in">안녕하세요 이성현 입니다.</h1>
+                    <p data-aos="flip-left">
+                        기술은 삶을 실질적으로 바꾸는 힘이라고 생각합니다.<br> 
+                        데이터 분석을 시작으로 웹 개발을 공부하며 
+                        재무, 금융과 기술의 융합에 관심을 두고 있습니다.<br> 
+                        혁신적인 기술로 레거시 금융 시스템의 비효율을 타파하고 큰 효용을 만들어 나가기 위해<br>
+                        금융과 기술을 탐구하여 본질적인 금융 서비스를 구현해 나가겠습니다.
+                    </p>
                 </div>
             </div>
-            <div class = "topnav">
-                <ul>
-                    <li>summary</li>
-                    <li>about</li>
-                    <li>skill set</li>
-                    <li>portfolio</li>
-                </ul>
-            </div>
+
             <div class = "frame">
-                <div class ="summary">
+                <div class ="section" id="about" data-aos="fade-up">
+                    <h3>About</h3>
                     <ul>
+                        <li>이름 : 이성현</li>
                         <li>skillset : java, R, python, mysql</li>
                         <li>학력 : 세종대학교 학사 경영(전공), 서양화(부전공)</li>
                         <li>자격증 : CFA lv.1, ADsP</li>
                         <li>주요 프로젝트 : 멀티팩터 포트폴리오 구축, 수익률 계산기, 리셀 투자 플랫폼</li>
+                        <li>깃헛브 : <a  href="https://github.com/kiki3700">git</a></li>
+                        <li>email : <a href="mailto:5575492q@gmail.com"> 5575492q@gmail.com</a></li>
                     </ul>
                 </div>
-                <div class = "about"></div>
-                <div class = "portfolio"></div>
+                
+                <div class="section" id ="swot">
+                    <h3>SWOT</h3>
+                    <table>
+                        <td></td>
+                    </table>
+                </div>
+
+                <div class ="section" id="skill-set" data-aos="fade-up">
+                    <h3>Skill Set</h3>
+                    <div id ="skill-set-con">
+                        <div id = "skill-set-left">
+                            <ul>Language :
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JAVA</li>
+                                <li>R</li>
+                                <li>Python</li>
+                            </ul>
+                            <ul>
+                                OS :
+                                <li>linux</li>
+                            </ul>
+                        </div>
+                        <div id = "skill-set-right">
+                            <ul>
+                                Framework + Library:
+                                <li>Spring</li>
+                                <li>ggplot</li>
+                                <li>shiny</li>
+                                <li>junit</li>
+                                <li>QuantLib</li>
+                            </ul>
+                            <ul>
+                                ETC
+                                <li>git</li>
+                                <li>AWS</li>
+                                <li>jenkins</li>
+                                <li>docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="section" id="portfolio" data-aos="fade-up">
+                    <div class ="portfolio-con" id = "web">
+                        <div class = "portfolio-contents">
+                            <div class="pofol-img-con"></div>
+                            <div class="pofol-spec">
+                                <ul>
+                                    <li>이름 : 리셀 투자 플랫폼</li>
+                                    <li>개발 기간 : 2021.04~05</li>
+                                    <li>사용기술 :  spring-mvc, tomcat, nginx, ec2</li>
+                                    <li>깃허브 : <a href=https://github.com/kiki3700/goldrushProject> git</a></li>
+                                    <li>  <div class="pofol-detail" id="">자세히</div></li>
+                                    <li>
+                                        <pre>
+                                            리셀이란, 희소한 재화를 매입하여 리셀 프리미엄을 받고 되파는 행위를 의미합니다. 이러한 재화는 미술품, 스니커즈, 사치재 등이  포함되고 고가이기 때문에 대중들에게 접근성이 좋지 못하다는 단점이있습니다. 이러한 점에 착안하여 재화를 매입하여 지분을 투자자들에게 배분하고, 투자자는 지분을 매매할 권리를 가집니다. 약정기간 후에 재화를 매도하여 수익금을 배분하는 웹어플리케이션을 개발하였습니다. 백엔드 개발을 담당하며 db설계, ipo, 청산, 거래 로직과 오픈뱅킹을 통한 입출금 구현, OAuth 등을 RESTFUL API로 개발하였습니다.
+                                        </pre>
+                                    </li>       
+                                </ul>
+                            </div>
+                          
+                        </div>
+                        <div class = "portfolio-contents">
+                            <div class="pofol-img-con"></div>
+                            <div class="pofol-spec">
+                                <ul>
+                                    <li>이름 : 주차장 관리 App</li>
+                                    <li>개발 기간 : 2021.03~04</li>
+                                    <li>사용기술 : Java, jsp, servelt, mysql, tomcat</li>
+                                    <li>깃허브 : <a href="https://github.com/kiki3700/parkinglot">https://github.com/kiki3700/parkinglot</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>                       
+                         <div class = "portfolio-contents">
+                            <div class="pofol-img-con"></div>
+                            <div class="pofol-spec"></div>
+                            <div class="pofol-detail" id=""></div>
+                        </div>  
+                    </div>
+                    <div class ="portfolio-con" id = "data">
+                        <div class = "portfolio-contents">
+                            <div class="pofol-img-con"></div>
+                            <div class="pofol-spec"></div>
+                            <div class="pofol-detail" id=""></div>
+                        </div>
+                        <div class = "portfolio-contents">
+                            <div class="pofol-img-con"></div>
+                            <div class="pofol-spec"></div>
+                            <div class="pofol-detail" id=""></div>
+                        </div>
+                        <div class = "portfolio-contents">
+                            <div class="pofol-img-con"></div>
+                            <div class="pofol-spec"></div>
+                            <div class="pofol-detail" id=""></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="resource/js/index.js"></script>
+        <script>
+            AOS.init({
+                easing: 'ease-out-back',
+                duration: 1000
+            });
+         
+        </script>  
     </body>
 </html>

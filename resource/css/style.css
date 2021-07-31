@@ -1,22 +1,69 @@
 @charset "utf-8";
-.background-image{
-    background-image: url(../image/olympicpark.jpg);
-    background-attachment: fixed;
+
+html{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
     height: 100vh;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.background-image{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .frame{
-    padding-left: 25%;
-    padding-right: 25%;
+    padding: 0 25% 0 25%;
 }
 
+nav{
+    font-weight: bold;
+    overflow: hidden;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 
 .topnav>ul{ 
+    padding: 0 15% 0 15%;
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
 .intro{
-    height: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: auto;
+}
+.intro>p{
+    border-left: 1.5px black solid;
+    padding-left: 5px;
+}
+
+.section{
+    height: 60vh;
+}
+
+
+#skill-set-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#skill-set-con>div > ul{
+    list-style-type: none;
 }
