@@ -39,7 +39,7 @@ body::webkit-scrollbar-track{
 }
 
 a:link { color: rgb(0, 0, 0); text-decoration: none;}
-a:visited { color: black; text-decoration: none;}
+a:visited { color: rgb(82, 80, 80); text-decoration: none;}
 a:hover { color: blue; text-decoration: underline;}
 
 
@@ -121,7 +121,7 @@ nav{
 .description{
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
-    background-color: rgb(233, 226, 220);
+    background-color: rgb(243, 243, 243);
 }
 
 
@@ -170,6 +170,8 @@ nav{
     font-weight: bold;
     border-bottom: 1px solid #000;
 }
+
+.pofol-detail-btn:hover { color: rgb(122, 122, 122); text-decoration: underline;}
 
 
 /*
