@@ -79,7 +79,7 @@ nav{
 }
 
 .intro>p{
-    border-left: 1.5px black solid;
+    border-left: 1.7px black solid;
     padding-left: 5px;
 }
 
@@ -87,6 +87,14 @@ nav{
 *            각화면 별 구성
 *
 */
+
+/*
+* 어바웃
+*/
+#about > ul{
+    list-style-type: none;
+}
+
 
 
 .section{
@@ -103,6 +111,8 @@ nav{
 #skill-set-con>div > ul{
     list-style-type: none;
 }
+
+
 
 /*
 *  포트폴리오 섹터
@@ -123,7 +133,6 @@ nav{
     padding: 10px 20px 10px 20px;
     background-color: rgb(243, 243, 243);
 }
-
 
 /*
 *     모달창
