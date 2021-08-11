@@ -168,6 +168,16 @@ nav{
     overflow-x: hidden;
 }
 
+.detail{
+    margin-top: 15px;
+}
+.detail .big-img-container{
+    width: 100%;
+}
+
+.big-img-container img{
+    width: 100%;
+}
 
 .spec>div{
     margin: 5vh 10vw 0 10vw;
