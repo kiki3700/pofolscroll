@@ -37,11 +37,11 @@ for(let i=0; i<detailArrBtn.length; i++){
     detailArrBtn[i].addEventListener("click",function(){
         detailArr[i].style.display="block"
         document.querySelector("body").style.overflow = 'hidden';
-        document.querySelector("body").style.backgroundColor="rgb(145, 145, 145)"
-        document.querySelector("nav").style.backgroundColor="rgb(145, 145, 145)"
+        document.querySelector("body").style.backgroundColor="#000"
+        document.querySelector("nav").style.backgroundColor="#000"
         document.querySelector("nav").style.zIndex=6
-        document.querySelector("body").style.color="rgb(112, 112, 112)"
-        detailArr[i].style.color="#000"
+        document.querySelector("body").style.color="#bebebe"
+        detailArr[i].style.color="#fafafa"
     })
 }
 
@@ -50,9 +50,9 @@ for(let i = 0 ; i<closeArr.length; i++){
         detailArr[i].style.display="none"
         document.querySelector("body").style.opacity="1"
         document.querySelector("body").style.overflow = 'scroll';
-        document.querySelector("nav").style.backgroundColor="#fff"
-        document.querySelector("body").style.backgroundColor="rgba(255,255,255)"
-        document.querySelector("body").style.color="rgba(0,0,0)"
+        document.querySelector("nav").style.backgroundColor="#121212"
+        document.querySelector("body").style.backgroundColor="#121212"
+        document.querySelector("body").style.color="#fafafa"
     })
 }
 

@@ -9,7 +9,8 @@ html{
 }
 
 body{
-    background-color: #fff;
+    background-color: #121212;
+    color: #fafafa;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -23,7 +24,7 @@ body::webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 body::webkit-scrollbar-track{
-    background-color: #fff;
+    background-color: #121212;
 }
 
 
@@ -54,7 +55,8 @@ nav{
     font-weight: bold;
     overflow: hidden;
     position: fixed;
-    background-color: #fff;
+    background-color: #121212;
+    color : #fafafa;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -131,7 +133,7 @@ nav{
 .description{
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(100, 100, 100);
 }
 
 /*
@@ -145,7 +147,7 @@ nav{
     width: 70vw;
     height: 13px;
     padding : 5px 0 8px 0;
-    background-color: #fff;
+    background-color: #121212;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 1px solid rgb(145, 145, 145);
@@ -159,7 +161,7 @@ nav{
     width: 70vw;
     top: 3vh;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #121212;
     box-shadow: 4px 3px 4px 3px rgba(0, 0, 0, 0.8); 
     border-radius: 10px;
     display: none;
@@ -182,12 +184,19 @@ nav{
 .spec>div{
     margin: 5vh 10vw 0 10vw;
 }
+.pofol-spec .cont{
+    display: flex;
+}
+
+.pofol-spec .cont ul{
+    list-style-type: none;
+}
 
 .pofol-detail-btn{
     margin-top: 3px;
     cursor: pointer;
     font-weight: bold;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #121212;
 }
 
 .pofol-detail-btn:hover { color: rgb(122, 122, 122); text-decoration: underline;}
