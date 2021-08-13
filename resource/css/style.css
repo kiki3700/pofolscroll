@@ -6,6 +6,7 @@
 html{
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 body{
@@ -39,8 +40,8 @@ body::webkit-scrollbar-track{
     padding: 0 25% 0 25%;
 }
 
-a:link { color: rgb(0, 0, 0); text-decoration: none;}
-a:visited { color: rgb(82, 80, 80); text-decoration: none;}
+a:link { color: #fafafa; text-decoration: none;}
+a:visited { color: rgb(180, 180, 180); text-decoration: none;}
 a:hover { color: blue; text-decoration: underline;}
 
 
@@ -81,7 +82,7 @@ nav{
 }
 
 .intro>p{
-    border-left: 1.7px black solid;
+    border-left: 1.7px #fafafa solid;
     padding-left: 5px;
 }
 
@@ -179,6 +180,14 @@ nav{
 
 .big-img-container img{
     width: 100%;
+}
+.small-img-container img{
+    width: 50%;
+    text-align: center;
+}
+.small-img-container img{
+    display:block; 
+    margin:auto;
 }
 
 .spec>div{
