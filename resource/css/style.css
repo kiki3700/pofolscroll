@@ -124,8 +124,16 @@ nav{
     height: 100%;
 }
 .portfolio-contents{
-    margin-bottom: 15%;
+    margin-bottom: 100px;
 }
+
+.cont .pofol-img-con{
+    width: 200px;
+}
+.cont .pofol-img-con img{
+    width: 100%;
+}
+
 
 .pofol-spec>ul{
     list-style-type: none;
@@ -196,6 +204,24 @@ nav{
 .pofol-spec .cont{
     display: flex;
 }
+
+.skill-stack> ul{
+    font-weight: bold;
+    list-style: none;
+}
+
+.stack-img-con{
+    display: flex;
+    margin-bottom: 6px;
+}
+.stack-img-con .logo-img{
+    height: 45px;
+    margin-right: 3%;
+}
+.stack-img-con .logo-img img{
+    height: 100%;
+}
+
 
 .pofol-spec .cont ul{
     list-style-type: none;
