@@ -129,9 +129,14 @@ nav{
 
 .cont .pofol-img-con{
     width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cont .pofol-img-con img{
     width: 100%;
+    margin: auto;
 }
 
 
