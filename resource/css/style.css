@@ -146,12 +146,13 @@ nav{
 
 .description{
     border-radius: 5px;
-    padding: 10px 20px 10px 20px;
-    background-color: rgb(100, 100, 100);
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(122, 122, 122);
 }
 
 /*
 *     모달창
+*
 */
 .close-btn{
     display: flex;
