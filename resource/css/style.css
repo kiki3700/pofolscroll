@@ -12,6 +12,8 @@ html{
 body{
     background-color: #121212;
     color: #fafafa;
+    line-height: 1.5;
+    font-weight: 550;;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -229,7 +231,7 @@ nav{
 }
 
 
-.pofol-spec .cont ul{
+.pofol-spec>.cont ul{
     list-style-type: none;
 }
 
