@@ -168,6 +168,7 @@ nav{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 1px solid rgb(145, 145, 145);
+    z-index: 1;
 
 }
 

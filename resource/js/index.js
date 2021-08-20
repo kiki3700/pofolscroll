@@ -16,8 +16,8 @@ let arr = Array.from(indexBtn);
 let arr1 = Array.from(sectionList)
 for(let i = 0; i<arr.length; i++){
     arr[i].addEventListener("click",function(){
-        window.scrollTo(0,-window.innerHeight/2.5+window.pageYOffset+arr1[i].getBoundingClientRect().top)
-        console.log(-window.innerHeight/2.5+window.pageYOffset+arr1[i].getBoundingClientRect().top)
+        window.scrollTo(0,-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
+        console.log(-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
 
 
     })
