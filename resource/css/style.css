@@ -120,8 +120,18 @@ nav{
 
 #skill-set-con>div > ul{
     list-style-type: none;
+    padding: 0;
+    width: 150%;
 }
-
+#skill-set-con >div >ul >li{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.score{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
 
 
 /*
