@@ -39,7 +39,7 @@ for(let i=0; i<detailArrBtn.length; i++){
         document.querySelector("body").style.overflow = 'hidden';
         document.querySelector("body").style.backgroundColor="#000"
         document.querySelector("nav").style.backgroundColor="#000"
-        document.querySelector("nav").style.zIndex=6
+        document.querySelector("nav").style.zIndex=1
         document.querySelector("body").style.color="#bebebe"
         detailArr[i].style.color="#fafafa"
     })
