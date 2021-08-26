@@ -13,7 +13,8 @@ body{
     background-color: #121212;
     color: #fafafa;
     line-height: 1.5;
-    font-weight: 570;
+    font-size: 15px;
+    font-weight: 580;
     line-height: 180%;
     height: 100vh;
     margin: 0;
@@ -39,6 +40,7 @@ body::webkit-scrollbar-track{
     background-position: center;
 }
 
+
 .frame{
     padding: 0 25% 0 25%;
 }
@@ -58,16 +60,18 @@ a:hover { color: blue; text-decoration: underline;}
 */
 
 nav .topnav{
-    z-index: 1!important;
+    font-size: 20px;
 }
 
 nav{
     font-weight: bold;
     overflow: hidden;
     position: fixed;
-    background-color: #121212;
+    background-color: #121212!important;
     color : #fafafa;
+    font-size: 20px;
     top: 0;
+    z-index: 1;
     width: 100%;
 
 }
@@ -131,7 +135,7 @@ nav{
     justify-content: space-between;
 }
 .score{
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 1.5px;
     font-weight: bold;
 }
@@ -165,6 +169,7 @@ nav{
 }
 
 .description{
+    font-size: 17px;
     border-radius: 5px;
     padding: 20px 30px 20px 30px;
     background-color: rgb(122, 122, 122);
@@ -185,7 +190,6 @@ nav{
     padding : 5px 0 8px 0;
     background-color: #121212;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     border-bottom: 1px solid rgb(145, 145, 145);
     z-index: 2;
 
@@ -199,7 +203,7 @@ nav{
     top: 3vh;
     left: 0;
     background-color: #121212;
-    box-shadow: 4px 3px 4px 3px rgba(0, 0, 0, 0.8); 
+    box-shadow: 4px 3px 4px 3px rgb(145, 145, 145);
     border-radius: 10px;
     display: none;
     position: fixed;
@@ -268,7 +272,16 @@ nav{
     height: 10vh;
 }
 
+.detail-section{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 17px;
+}
 
+.divider{
+    width: 100%;
+    border-bottom: 1px solid rgb(145, 145, 145);
+}
 
 /*
 * footer
