@@ -47,14 +47,20 @@ openBtn.addEventListener("click", function(){
     console.log(menu.style.display=="")
     if(menu.style.display=="" || menu.style.display=='none'){
         menu.style.backgroundColor="#121212"
+        nav.style.backgroundColor="#121212 !important"
         openBtn.style.backgroundColor="#121212"
+        document.querySelector("body").style.overflow = 'hidden';
+        console.log("색"+nav.style.backgroundColor)
+
+
         menu.style.display='flex'
         menu.style.flexDirection="column!important";
     }else{
         menu.style.display='none'
         openBtn.style.backgroundColor="#00000000";
         menu.style.backgroundColor="#00000000";
-       
+       nav.style.backgroundColor="#00000000 !important";
+       document.querySelector("body").style.overflow = 'scroll';
     }
     console.log(menu.style.display)
 })
@@ -78,6 +84,7 @@ let arr = Array.from(indexBtn);
 let arr1 = Array.from(sectionList)
 for(let i = 0; i<arr.length; i++){
     arr[i].addEventListener("click",function(){
+        document.querySelector("body").style.overflow = 'scroll';
         window.scrollTo(0,-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
         console.log(-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
         if(window.innerWidth<=460){

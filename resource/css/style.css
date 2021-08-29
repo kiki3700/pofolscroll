@@ -66,8 +66,7 @@ nav .topnav{
 .topnav .menu-btn{
     display: none;
     font-size : 30px;
-    padding-left: 20px;
-    padding-top: 20px;
+
 }
 
 nav{
@@ -138,7 +137,7 @@ nav{
 #skill-set-con>div > ul{
     list-style-type: none;
     padding: 0;
-    width: 150%;
+    width: 100%;
 }
 #skill-set-con >div >ul >li{
     display:flex;
@@ -330,15 +329,17 @@ nav{
 */
     .topnav{
         width: 100vw;
-        height: 100vh;
-        background-color: #00000000!important;
     }
 
     .topnav #open-menu{
-        display: block;
+        padding-right: 90%;
+        display: inline; 
+        width:100%;
     }
 
     #menu{ 
+        height: 80%;
+        width: 100%;
         display: none;
         padding: 0 15% 0 15%;
         margin : 0;
@@ -392,6 +393,9 @@ nav{
 /*
 모달창
 */
+    .topnav{
+        background-color: rgba(0, 0, 0, 0)!important;
+    }
 
     .close-btn{
         width: 90%;
