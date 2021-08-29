@@ -87,7 +87,7 @@ for(let i = 0; i<arr.length; i++){
         document.querySelector("body").style.overflow = 'scroll';
         window.scrollTo(0,-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
         console.log(-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
-        if(window.innerWidth<=460){
+        if(menu.style.display=="flex"){
             menu.style.display='none'
             openBtn.style.backgroundColor="#00000000";
             menu.style.backgroundColor="#00000000";
