@@ -330,6 +330,7 @@ nav{
 */
     .topnav{
         width: 100vw;
+        height: 100vh;
         background-color: #00000000!important;
     }
 
