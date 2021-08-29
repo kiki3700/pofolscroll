@@ -121,7 +121,7 @@ nav{
 
 
 .section{
-    height: 100%;
+    height: 85vh;
 }
 
 /*
@@ -221,7 +221,7 @@ nav{
     top: 3vh;
     left: 0;
     background-color: #323131;
-    box-shadow: 4px 3px 4px 3px rgb(145, 145, 145);
+    box-shadow: 4px 3px 4px 3px rgb(85, 85, 85);
     border-radius: 10px;
     display: none;
     position: fixed;
