@@ -1,27 +1,4 @@
-//화면 스크롤 펑션
 
-var indexBtn = document.querySelectorAll(".index-btn");
-var sectionList = document.querySelectorAll(".section");
-
-var about = document.querySelector(".section");
-console.log(about)
-var length = about.getBoundingClientRect()
-console.log(length)
-var x = length.y
-const a = document.querySelector(".index-btn")
-
-console.log(x);
-
-let arr = Array.from(indexBtn);
-let arr1 = Array.from(sectionList)
-for(let i = 0; i<arr.length; i++){
-    arr[i].addEventListener("click",function(){
-        window.scrollTo(0,-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
-        console.log(-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
-
-
-    })
-}
 
 
 // 모달 창 펑션
@@ -32,6 +9,8 @@ let detailArrBtn = Array.from(detailsBtn)
 let detailArr = Array.from(details)
 const closeArr = Array.from(closeBtn)
 console.log(detailArr[0])
+
+console.log(window.innerWidth)
 
 for(let i=0; i<detailArrBtn.length; i++){
     detailArrBtn[i].addEventListener("click",function(){
@@ -56,3 +35,56 @@ for(let i = 0 ; i<closeArr.length; i++){
     })
 }
 
+/*메뉴 버튼*/
+
+const openBtn = document.querySelector("#open-menu");
+const nav =document.querySelector('.topnav')
+const menu = document.querySelector("#menu");
+
+console.log(menu.style.display)
+
+openBtn.addEventListener("click", function(){
+    console.log(menu.style.display=="")
+    if(menu.style.display=="" || menu.style.display=='none'){
+        menu.style.backgroundColor="#121212"
+        openBtn.style.backgroundColor="#121212"
+        menu.style.display='flex'
+        menu.style.flexDirection="column!important";
+    }else{
+        menu.style.display='none'
+        openBtn.style.backgroundColor="#00000000";
+        menu.style.backgroundColor="#00000000";
+       
+    }
+    console.log(menu.style.display)
+})
+
+
+//화면 스크롤 펑션
+
+var indexBtn = document.querySelectorAll(".index-btn");
+var sectionList = document.querySelectorAll(".section");
+
+var about = document.querySelector(".section");
+console.log(about)
+var length = about.getBoundingClientRect()
+console.log(length)
+var x = length.y
+const a = document.querySelector(".index-btn")
+
+console.log(x);
+
+let arr = Array.from(indexBtn);
+let arr1 = Array.from(sectionList)
+for(let i = 0; i<arr.length; i++){
+    arr[i].addEventListener("click",function(){
+        window.scrollTo(0,-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
+        console.log(-window.innerHeight/4+window.pageYOffset+arr1[i].getBoundingClientRect().top)
+        if(window.innerWidth>=460){
+            menu.style.display='none'
+            openBtn.style.backgroundColor="#00000000";
+            menu.style.backgroundColor="#00000000";
+        }
+
+    })
+}

@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class = "modal">
@@ -400,10 +401,12 @@
         </div>  
         <div class="body">
             <nav class = "topnav">
-                <ul>
+                <bnt class="menu-btn" id="open-menu">☰</bnt>
+                <bnt class="menu-btn" id="close-men">X</bnt>
+                <ul id="menu">
                     <li class="index-btn">About</li>
                     <li class="index-btn">Contact</li>
-                    <li class="index-btn">Skill set</li>
+                    <li class="index-btn">Skill Set</li>
                     <li class="index-btn">Portfolio</li>
                 </ul>
             </nav>
@@ -486,6 +489,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class ="section" id="portfolio" data-aos="fade-up" data-aos-offset="300">
                         <h1>웹 개발 프로젝트</h1>
                         <div class ="portfolio-con" id = "web">
