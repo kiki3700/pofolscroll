@@ -13,7 +13,7 @@ body{
     background-color: #121212;
     color: #fafafa;
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 590;
     line-height: 180%;
     height: 100vh;
@@ -114,9 +114,12 @@ nav{
 
 
 .section{
-    height: 60vh;
+    height: 100%;
 }
 
+/*
+스킬셋
+*/
 
 #skill-set-con{
     display: flex;
@@ -225,6 +228,9 @@ nav{
 .detail .big-img-container{
     width: 100%;
 }
+.detail>div>ul{
+    list-style-type: none;
+}
 
 .big-img-container img{
     width: 100%;
@@ -297,3 +303,21 @@ nav{
 .footer{
     height: 20vh;
 }
+
+/*
+@media screen and (min-width: 769px){
+    body{
+        font-size: 20px;
+    }
+    .frame{
+        padding: 0 10% 0 10%;
+    }
+
+    #skill-set-con{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+*/
