@@ -13,7 +13,7 @@ body{
     background-color: #121212;
     color: #fafafa;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 	1.125em;
     font-weight: 590;
     line-height: 180%;
     height: 100vh;
@@ -175,7 +175,6 @@ nav{
 *contact
 */
 #contact ul{
-    font-size: 20px;
     list-style-type: none;
 }
 
