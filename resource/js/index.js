@@ -27,8 +27,8 @@ for(let i = 0 ; i<closeArr.length; i++){
         detailArr[i].style.display="none"
         document.querySelector("body").style.opacity="1"
         document.querySelector("body").style.overflow = 'scroll';
-        document.querySelector("nav").style.backgroundColor="#121212"
-        document.querySelector("body").style.backgroundColor="#121212"
+        document.querySelector("nav").style.backgroundColor="#000"
+        document.querySelector("body").style.backgroundColor="#000"
         document.querySelector("body").style.color="#fafafa"
     })
 }
@@ -43,9 +43,9 @@ const menu = document.querySelector("#menu");
 
 openBtn.addEventListener("click", function(){
     if(menu.style.display=="" || menu.style.display=='none'){
-        menu.style.backgroundColor="#121212"
-        nav.style.backgroundColor="#121212 !important"
-        openBtn.style.backgroundColor="#121212"
+        menu.style.backgroundColor="#000"
+        nav.style.backgroundColor="#000 !important"
+        openBtn.style.backgroundColor="#000"
         document.querySelector("body").style.overflow = 'hidden';
 
 
