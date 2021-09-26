@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color: #121212;
+    background-color: #000;
     color: #fafafa;
     line-height: 1.5;
     font-size: 	1.125em;
@@ -35,10 +35,12 @@ body::webkit-scrollbar-track{
 
 
 .background-image{
+    top: -100%;
     background-attachment: fixed;
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/s84-27018.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: top;
     background-position: center;
 }
 

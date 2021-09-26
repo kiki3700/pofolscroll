@@ -86,3 +86,22 @@ for(let i = 0; i<arr.length; i++){
 
     })
 }
+
+// (window).addEventListener('scroll', (function(e){
+
+//     parallax();
+
+// })
+// );
+
+
+// var bgi =document.querySelector('.background-image')
+// function parallax(){
+
+//     var scrolled = (window).scrollY;
+    
+//     bgi.style.backgroundPositionY = -(scrolled*0.4)+'px';
+
+// }
+
+

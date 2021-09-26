@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./p.css" type="text/css">
+
+    </head>
+    <body>
+        <div id ='a' style="top:30%;">
+           <img src='resource/image/astronut.png'>
+        </div>
+        <div id ='b' style="bottom:-30%;">
+           <img src="/resource/image/earth.png">
+        </div>
+        <script> 
+            var body = document.body,
+    html = document.documentElement;
+console.log("dlrj tlfgodehl")
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+                       var a = document.getElementById('a')
+                var b = document.getElementById('b')
+                var scrolled = window.scrollY
+                a.style.top=parseInt(a.style.top.split("%")[0])+(scrolled/height)+"%";
+               b.style.bottom=parseInt(b.style.bottom.split("%")[0])+(scrolled/height)+"%";
+            document.addEventListener('scroll',function(e){
+
+                var scrolled = window.scrollY
+                a.style.top=parseInt(a.style.top.split("%")[0])+ (scrolled/height)+"%";
+               b.style.bottom=parseInt(b.style.bottom.split("%")[0])+(scrolled/height)+"%";
+               console.log(scrolled/height)
+                console.log(b.style.bottom)
+                console.log(a.style.top)
+            })
+        </script>
+    </body>
+</html>
