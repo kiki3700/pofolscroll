@@ -14,7 +14,8 @@
         <script> 
             var body = document.body,
     html = document.documentElement;
-console.log("dlrj tlfgodehl")
+
+
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
                        var a = document.getElementById('a')
@@ -22,14 +23,31 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                 var scrolled = window.scrollY
                 a.style.top=parseInt(a.style.top.split("%")[0])+(scrolled/height)+"%";
                b.style.bottom=parseInt(b.style.bottom.split("%")[0])+(scrolled/height)+"%";
-            document.addEventListener('scroll',function(e){
 
+
+               var beforePosition = document.documentElement.scrollTop   
+
+
+
+var sum =0;
+               window.__scrollPosition = document.documentElement.scrollTop || 0;  
+            document.addEventListener('scroll',function(){
+
+    var afterPosition = document.documentElement.scrollTop;
+    let _documentY = document.documentElement.scrollTop;
+  let _direction = _documentY - window.__scrollPosition 
+  
+  
+
+  window.__scrollPosition = _documentY; // Update scrollY
                 var scrolled = window.scrollY
-                a.style.top=parseInt(a.style.top.split("%")[0])+ (scrolled/height)+"%";
-               b.style.bottom=parseInt(b.style.bottom.split("%")[0])+(scrolled/height)+"%";
-               console.log(scrolled/height)
-                console.log(b.style.bottom)
-                console.log(a.style.top)
+    
+    
+                a.style.top=parseInt(a.style.top.split("%")[0])+ 2*(_direction/height)+"%";
+               b.style.bottom=parseInt(b.style.bottom.split("%")[0])+2*(_direction/height)+"%";
+               console.log(_direction/height)
+                 console.log(b.style.bottom)
+                 console.log(a.style.top)
             })
         </script>
     </body>
