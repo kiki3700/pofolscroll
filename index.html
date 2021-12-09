@@ -20,13 +20,13 @@
                 <div class ="spec">
                     <div class= "detail">
                         <div class = "detail-section">
-                            <h1>마네키 네코란?</h1>
+                            <h1>종합 투자 어플리케이션이란?</h1>
                             
                             <div class ="big-img-container">
                                 <img src="./resource/image/pofol/con0/infraDomain.png" alt="app-infra">
                             </div>
                             <p> 
-                             마네키 네코 프로젝트는 알고리즘 트레이딩 봇 개발 프로젝트로 투자 자동화와 시황 판단을 위해 시각화를 목적으로 개발하고 있습니다.<br>
+                            &ensp;종합 투자 어플리케이션, 마네키 네코 프로젝트는 알고리즘 트레이딩 봇 개발 프로젝트로 투자 자동화와 시황 판단을 위해 시각화를 목적으로 개발하고 있습니다.<br>
                              투자는 포트폴리오 운용전략과 특정 전략을 추종할 수 있도록 설계 했으며,<br>
                              투자자는 다양한선택지를 통해 자동으로 포트폴리오를 구축하고, 투자를 운용할 수 있습니다.
                              앱플리케이션은 api의 통신을 통해 데이터를 취득하고, 거래를 담당하는 윈도우서버와<br>
@@ -55,7 +55,7 @@
                             </div>
 
                             <p>
-                                알고리즘 트레이딩 봇은 4개의 도메인으로 나눠져있습니다.<br>
+                                &ensp;종합 투자 어플리케이션은 4개의 도메인으로 나눠져있습니다.<br>
                                 FE를 담당하는 우분투 서버에서는  금융 데이터의 시각화를 위한 시황 판단하는 시황 도메인,<br>
                                  이를 통해 투자 전략을 세우고 자동으로 투자를 수행하는 투자 도메인으로 이뤄져있습니다.<br>
                                윈도우 서버에서는 대신증권, 빗썸, 한국은행, dart의 api를 활용하여 데이터를 취득하는 데이터 도메인과<br>
@@ -95,6 +95,9 @@
                             <div class ="big-img-container">
                                 <img src="./resource/image/pofol/con0/gitflow.png">
                             </div>
+                            &ensp;깃허브를 사용해 형상관리를 했습니다. 백엔드, 프론트엔드에서 각각 브랜치를 만들었고, 기능별 개발이 완료 될 시각화에는
+                            완료하면 dev 브랜치와 병합하고 테스트 후 배포하는 전략을 사용하였습니다. jenkins가 main 브랜치에 훅을 걸어
+                            파이프 라인을 구축하였습니다.
                         </div>
 
 
@@ -123,37 +126,9 @@
                         </div>
                         
                         <div class="divider"></div>
-                        
-                        <div class = "detail-section">
-                            <h1>프로젝트에서 담당한것</h1>
-                            <ul>
-                                <li>앱 기획 및 기본 디자인</li>
-                                <li>db 스키마 설계</li>
-                                <li>open-banking api 입출금 프로세스 구현</li>
-                                <li>인프라(aws, docker, jenkins) 구축 및 배포</li>
-                            </ul>
-                        </div>
-
-                        <div class="divider"></div>
-
-                        <div class = "detail-section">
-                            <h1>프로젝트 구조</h1>
-                            <div class ="big-img-container">
-                                <img src="./resource/image/pofol/con1/app-structure.png" alt="app-infra">
-                            </div>
-                            <p>
-                                &ensp;프로젝트는 프론트엔드, 백엔드로 나눠져 있고 프론트엔드는 vanila js를 사용해 <strong>MVC패턴</strong>을 구현했습니다.
-                                유저의 상태를 <strong>로컬 스토리지</strong>에 저장하게 됩니다. <strong>fetch</strong>를 사용해 서버에 요청을 주고받습니다. 백엔드는 <strong>자바</strong>, <strong>스프링 프레임 워크</strong>를 사용하여 개발하였고,
-                                <strong>spring mvc</strong>프로젝트를 사용해 개발했습니다. 브라우저와 <strong>Restful api</strong>를 사용하여 통신하게 되며 db는 <strong>mysql</strong>을 사용하였습니다. <strong>형상 관리</strong>는 <strong>git</strong>깃을 사용하였고, 
-                                <strong>aws ec2</strong>를 사용해 배포하였습니다.
-                            </p>
-                        </div>
-
-                        <div class="divider"></div>
-
                         <div class = "detail-section">
                             <div class="skill-stack">
-                                <h1>skill stack</h1>
+                                <h1>tech stack</h1>
                                 <ul>
                                     <li>
                                         front-end : 
@@ -209,7 +184,47 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="divider"></div>
+                        <div class ="detail-section">
+                            <h1>사용기술 설명</h1>
+                            <ul>
+                                <strong><li>Spring</li></strong>
+                                DI의 존성 주입 => xml context 방식 사용했습니다.
+                                <strong><li>Scheduler</li></strong>
+                                청산, 공모를 자동적으로 처리되도록 설계했습니다.
+                                <strong><li>RestTemplate</li></strong>
+                                Http 서버와 동기 방식 통신시 사용합니다.
+                                <strong><li>jackson</li></strong>
+                                통신을 통해 주고 받는 json 데이터 파싱 및 Object 생성합니다.
+                               <strong> <li>Openbanking api</li></strong>
+                                OAuth 인증 까지 구현, 입출금 프로세스는 간략화하게 구현했습니다.
+                                <strong><li>jdbc/mybatis</li></strong>
+                                프로젝트 초기엔 jdbc를 사용했지만 추후 mybatis를 적용했습니다.
+                            </ul>
+                        </div>
+                        <div class = "detail-section">
+                            <h1>프로젝트에서 담당한것</h1>
+                            <ul>
+                                <li>앱 기획 및 기본 디자인</li>
+                                <li>db 스키마 설계</li>
+                                <li>open-banking api 입출금 프로세스 구현</li>
+                                <li>인프라(aws, docker, jenkins) 구축 및 배포</li>
+                            </ul>
+                        </div>
+                        <div class="divider"></div>
 
+                        <div class = "detail-section">
+                            <h1>프로젝트 구조</h1>
+                            <div class ="big-img-container">
+                                <img src="./resource/image/pofol/con1/app-structure.png" alt="app-infra">
+                            </div>
+                            <p>
+                                &ensp;프로젝트는 프론트엔드, 백엔드로 나눠져 있고 프론트엔드는 vanila js를 사용해 <strong>MVC패턴</strong>을 구현했습니다.
+                                유저의 상태를 <strong>로컬 스토리지</strong>에 저장하게 됩니다. <strong>fetch</strong>를 사용해 서버에 요청을 주고받습니다. 백엔드는 <strong>자바</strong>, <strong>스프링 프레임 워크</strong>를 사용하여 개발하였고,
+                                <strong>spring mvc</strong>프로젝트를 사용해 개발했습니다. 브라우저와 <strong>Restful api</strong>를 사용하여 통신하게 되며 db는 <strong>mysql</strong>을 사용하였습니다. <strong>형상 관리</strong>는 <strong>git</strong>깃을 사용하였고, 
+                                <strong>aws ec2</strong>를 사용해 배포하였습니다.
+                            </p>
+                        </div>
                         <div class="divider"></div>
 
                         <div class = "detail-section">
@@ -253,7 +268,7 @@
                                 <img src="./resource/image/pofol/con1/openapi_process.png">
                             </div>
                             <p>
-                                &ensp;입출금 프로세스는 오픈뱅킹 API를 사용하여 구현했고, 다음의 프로세스를 따르게 됩니다.
+                                &ensp;입출금 프로세스는 오픈뱅킹 API를 사용하여 구현했고, 다음의 프로세스를 따르게 됩니다.<br>                           
                             </p>
                         </div>
 
@@ -596,7 +611,7 @@
                         <h1>웹 개발 프로젝트</h1>
                         <div class ="portfolio-con" id = "web">
                             <div class = "portfolio-contents">
-                                <h2>마네키 네코</h2>
+                                <h2>종합 투자 어플리케이션</h2>
                                 <div class="pofol-spec">
                                     <div class="cont"> 
                                         <div class="pofol-img-con">
@@ -605,6 +620,7 @@
                                        <div>   
                                             <ul>
                                                 <li><strong>개발 기간 :</strong> 2021.10~</li>
+                                                <li><strong>개발 인원 :</strong> 2명</li>
                                                 <li><strong>사용기술 :</strong>  spring-boot, mybatis, com4j, OjAlgo, Java-Script</li>
                                                 <li><strong>깃허브 :</strong> 
                                                     <a href="https://github.com/kiki3700/ark">Ark server</a>, 
@@ -616,7 +632,7 @@
                                     </div>
                                     <div>
                                         <p class ="description">
-                                            &ensp; <strong>마네키 네코의</strong> 목표는 자동으로 포트폴리오를 구축, 액티브 매니지먼트, 금융데이터 시각화입니다.
+                                            &ensp; <strong> 종합 투자 어플리케이션, 마네키 네코의</strong> 목표는 자동으로 포트폴리오를 구축, 액티브 매니지먼트, 금융데이터 시각화입니다.
                                             대신증권, dart, bithhum, 한국은행의 api를 활용해 데이터를 취득, 가공, 시각화를 하는 <strong>시황 도메인</strong>,
                                             원하는 전략을 선택해 자동으로 투자를 진행하는 <strong>투자 도메인</strong>으로 구성되어 있습니다.
                                             보안과 호환성 문제로 윈도우 서버에서 api와 통신을 주고 받고, FE는 우분투 서버에서 배포될 계획입니다.
@@ -635,6 +651,7 @@
                                        <div>   
                                             <ul>
                                                 <li><strong>개발 기간 :</strong> 2021.04~05</li>
+                                                <li><strong>개발 인원 :</strong> 백엔드 1명, 프론트엔드 1명</li>
                                                 <li><strong>사용기술 :</strong>  spring-mvc, tomcat, nginx, docker, jdbc</li>
                                                 <li><strong>깃허브 :</strong> <a href=https://github.com/kiki3700/goldrushProject>goldrushProject</a></li>
                                                 <li> <btn class = "pofol-detail-btn">자세히</btn> 
