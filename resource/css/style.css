@@ -139,16 +139,15 @@ nav{
 
 #skill-set-con{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-#skill-set-con>div > ul{
+#skill-set-con > ul{
     list-style-type: none;
-    padding: 0;
     width: 100%;
 }
-#skill-set-con >div >ul >li{
+#skill-set-con >ul >li{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
