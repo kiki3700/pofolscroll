@@ -26,10 +26,10 @@
                                 <img src="./resource/image/pofol/con0/uiDesign.png" alt="app-infra">
                             </div>
                             <p> 
-                            &ensp;<strong>종합 투자 어플리케이션, 마네키 네코 프로젝트</strong>는 <strong>알고리즘 트레이딩 봇</strong> 개발 프로젝트로 <strong>투자 자동화</strong>와 <strong>시황 판단</strong>을 위해 <strong>시각화</strong>를 목적으로 개발하고 있습니다.
+                            &ensp;<strong>마네키 네코 프로젝트</strong>는 <strong>종합 투자 어플리케이션</strong> 개발 프로젝트로 <strong>투자 자동화</strong>와 <strong>시황 판단</strong>을 위한 <strong>시각화</strong>를 목적으로 개발하고 있습니다.
                         <strong>투자는 포트폴리오 운용전략과 특정 전략</strong>을 추종할 수 있도록 설계 했습니다.<br>
                     <strong>투자자는 다양한선택지</strong>를 통해 <strong>자동으로 포트폴리오를 구축</strong>하고, <strong>투자를 운용</strong>할 수 있습니다.
-                <strong>애플리케이션</strong>은 <strong>api</strong>의 <strong>통신</strong>을 통해 <strong>데이터를 취득</strong>하고, <strong>거래를 담당</strong>하는 <strong>윈도우서버</strong>와 <strong>FE</strong>를 담당하는 <strong>우분투 서버</strong>로 이뤄져있습니다.
+                <strong>애플리케이션</strong>은 두개의 서버로 이뤄져잇습니다. <strong>여러 호트스의 api</strong> <strong>통신</strong>을 통해 <strong>데이터를 취득</strong>하고, <strong>거래를 담당</strong>하는 <strong>윈도우서버</strong>와 <strong>FE</strong>를 담당하는 <strong>우분투 서버</strong>로 이뤄져있습니다.
                             </p>
                         </div>
                         
@@ -163,11 +163,11 @@
                                 <img src="./resource/image/pofol/con1/scenario.png">
                             </div>
                             <p> 
-                                &ensp;<strong>리셀 상품에 투자할 수 있는 트레이딩 플랫폼</strong>을 개발하였습니다. 총 개발 인원은 2명, 개발기간은 1달이 소요되었습니다. 
-                                리셀 투자의 접근성을 낮춰 새로운 투자 기회를 제공하기 위해 개발하였습니다. 
+                                &ensp;<strong>리셀 상품에 투자할 수 있 트레이딩 플랫폼</strong>을 개발하였습니다. 총 개발 인원은 2명, 개발기간은 1달이 소요되었습니다. 
+                                조각 투자를 통해 리셀 투자의 접근성을 낮춰 새로운 투자 기회를 제공하기 위해 개발하였습니다. 
                                 <br>&ensp;서비스 제공자가 현물을 매입하여 <strong>청약</strong>을 통해 투자자(회원)들에게 <strong>지분을 배분</strong>하고 투자자는 
                                 지분을 플랫폼 내에서 <strong>자유롭게 매매</strong> 할 수 있습니다. 상품의 약정기간이 만료되면 <strong>현물을 청산</strong>하여 <strong>수익금을 투자자에게 지급</strong>하는 것이 리셀 투자 플랫폼의 메인 시나리오입니다.
-                                플랫폼 내 재화는 <strong>open banking</strong>을 통해 충전 및 환전을 할 수 있습니다.
+                                플랫폼 내 재화는 <strong>open banking</strong>을 통해 OAuth 인증을 구현, 입출금 프로세스를 설계했습니다.
                             </p>
                         </div>
                         
@@ -266,8 +266,9 @@
                             </div>
                             <p>
                                 &ensp;프로젝트는 프론트엔드, 백엔드로 나눠져 있고 프론트엔드는 vanila js를 사용해 <strong>MVC패턴</strong>을 구현했습니다.
-                                유저의 상태를 <strong>로컬 스토리지</strong>에 저장하게 됩니다. <strong>fetch</strong>를 사용해 서버에 요청을 주고받습니다. 백엔드는 <strong>자바</strong>, <strong>스프링 프레임 워크</strong>를 사용하여 개발하였고,
-                                <strong>spring mvc</strong>프로젝트를 사용해 개발했습니다. 브라우저와 <strong>Restful api</strong>를 사용하여 통신하게 되며 db는 <strong>mysql</strong>을 사용하였습니다. <strong>형상 관리</strong>는 <strong>git</strong>깃을 사용하였고, 
+                                유저의 상태를 <strong>로컬 스토리지</strong>에 저장하게 됩니다. <strong>fetch</strong>를 사용해 서버에 요청을 주고받습니다.<br>
+                                 백엔드는 <strong>자바</strong>, <strong>스프링 프레임 워크</strong>를 사용하여 개발하였습니다. <br>
+                                 브라우저와 <strong>Restful api</strong>를 사용하여 통신하게 되며 db는 <strong>mysql</strong>을 사용하였습니다. <strong>형상 관리</strong>는 <strong>git</strong>깃을 사용하였고, 
                                 <strong>aws ec2</strong>를 사용해 배포하였습니다.
                             </p>
                         </div>
@@ -309,7 +310,7 @@
                         <div class="divider"></div>
 
                         <div class = "detail-section">
-                            <h1>오픈뱅킹 프로세스</h1>
+                            <h1>입출금 프로세스</h1>
                             <div class ="big-img-container">
                                 <img src="./resource/image/pofol/con1/openapi_process.png">
                             </div>
@@ -359,8 +360,8 @@
                             <h1>어플리케이션 설명</h1>
                             <p>
                                 &ensp;실제로 주차장 아르바이트를 하며 개선하면 좋겠다고 생각한 것들을 해결해보고 싶어서 사설 주차장이라는 시나리오를 가지고 <strong>웹 애플리케이션</strong>을 개발했습니다. 
-                                <strong>예약 시스템, 대형차와 중·소형차의 주차 공간 분리, 무인 계산기</strong> 등 프로세스를 개선하기 위해 주차장에 필요한 기능들을 서비스 로직으로 구현하였고
-                                 <strong>jsp</strong>와 <strong>servlet</strong>을 사용하여  <strong>Model2패턴</strong>을 구현하였습니다.
+                                <strong>예약 시스템, 대형차와 중·소형차의 주차 공간 분리, 무인 계산기</strong> 등의 기능을 구현하여 주차장의 프로세스를 개선하기 위해 노력했습니다.<br>
+                                <strong>jsp</strong>와 <strong>servlet</strong>을 사용하여  <strong>Model2패턴</strong>을 구현하였습니다.
                             </p>
                         </div>
 
@@ -373,7 +374,7 @@
                             </div>
                             <p>
                                 &ensp;dto와 dao를 사용하지 않았지만, 객체지향 설계를 하기 위해 노력했습니다.
-                                DB는 쿼리 된 내용을 Strong으로 출력하기 때문에 util 클래스를 통해 map 전환하여 서비스 로직을 담당하는 클래스에서 데이터를 처리할 수 있도록 개발하였습니다.<br>
+                                DB에서 쿼리된 내용은 데이터 타입이 String형이기 때문에 때문에 util 통해 데이터 타입을 map 전환하여 서비스 로직을 담당하는 클래스에서 데이터를 처리할 수 있도록 개발하였습니다.<br>
                                 &ensp;JSP는 화면을 구성하는 view로, client의 요청을 로직 처리 클래스로 연결하는 controller 그리고 서비스 로직 담당 클래스는 model의 패턴을 구현하였습니다.
                                 서블릿, JSP간의 이동은 forward를 사용하였습니다.
                             </p>
@@ -432,11 +433,8 @@
                             <img src="resource/image/pofol/con3/architecture.png">
                             </div>
                             <p>
-                                &ensp;<strong>샤이니</strong>는 <strong>R</strong>을 사용해 <strong>interactive web app</strong> 제작을 가능케 하는 R 패키지로
-                                샤이니 코드를 사용해 <strong>UI(html, css)</strong>와 <strong>서버</strong>를 구현할 수 있습니다.<br>
-                                &ensp; 유저는 UI를 통해 원하는 정보를 input을 통해 
-                                서버에 요청하고, 서버는 input을 처리하여 UI는 output을 출력하게 됩니다.
-                                해당 어플리케이션은 산업과 산업 내 종목을 선택할 수 있고, 재무 비율을 비교할 수 있습니다.
+                                &ensp;<strong>샤이니</strong>는 <strong>R</strong>을 사용해 <strong>interactive web app</strong> 제작을 가능케 하는 R 프레임워크로
+                                R을 사용해 <strong>UI(html, css)</strong>와 <strong>서버</strong>를 구현할 수 있다는 장점이있습니다.
                             </p>
                         </div>
 
